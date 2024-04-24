@@ -1,0 +1,19 @@
+CREATE TABLE Bilets
+(
+    id SMALLINT NOT NULL AUTO_INCREMENT,
+    fornavn VARCHAR(255) NOT NULL,
+    etternavn VARCHAR(255) NOT NULL,
+    telefonNr VARCHAR(255) NOT NULL,
+    epost VARCHAR(255) NOT NULL,
+    antall INTEGER NOT NULL,
+    filmNavn VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Films
+(
+    id SMALLINT NOT NULL AUTO_INCREMENT,
+    category VARCHAR(255) NOT NULL,
+    navn VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
